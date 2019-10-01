@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: gray;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gramaticas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gramatica {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.conjuntoSeleccion,
+.producciones {
+  width: 300px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.N-T-container {
+  display: flex;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}

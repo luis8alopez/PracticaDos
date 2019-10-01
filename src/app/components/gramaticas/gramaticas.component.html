@@ -1,0 +1,5 @@
+<h1 style="color: whitesmoke;">Listado de Gramaticas</h1>
+<button (click)="verForm()">Agregar una gramatica</button>
+<div class="gramaticas" *ngFor="let gramatica of gramaticas; let i=index">
+    <app-gramatica class="gramatica" [gramatica]="gramatica"></app-gramatica>
+</div>

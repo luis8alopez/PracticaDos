@@ -1,0 +1,14 @@
+<div class="producciones">
+    <h3>Tipo de gramatica: No se pudo determinar</h3>
+    <app-produccion *ngFor="let produccion of gramatica.producciones; let i=index" [produccion]="produccion">
+    </app-produccion>
+</div>
+
+<div class="conjuntoSeleccion">
+    <h3>Conjunto de seleccion</h3>
+    <ul>
+        <li style="list-style-type: none;" *ngFor="let prod of conjuntoSeleccion">
+            selección({{prod.numero}}) = [{{prod.seleccion}}]
+        </li>
+    </ul>
+</div>

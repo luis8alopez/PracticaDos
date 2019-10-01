@@ -1,0 +1,34 @@
+<h1>Agregar gramatica</h1>
+<button (click)="verGramaticas()">Ver gramaticas agregadas</button>
+<div class="N-T-container">
+    <div class="noTerminales">
+        <label>Agregar no terminal</label>
+        <input type="text" [(ngModel)]="noTerminal">
+        <button (click)="agregarNoTerminal()">Agregar</button>
+        <ul>
+            <li *ngFor="let noTerm of N; let i=index;">{{noTerm}} <button style="background-color: red;"
+                    (click)="borrarNoTerminal(i)">borrar</button>
+            </li>
+        </ul>
+    </div>
+    <div class="terminales">
+        <label>Agregar terminal</label>
+        <input type="text" [(ngModel)]="terminal">
+        <button (click)="agregarTerminal()">Agregar</button>
+        <ul>
+            <li *ngFor="let term of T; let i = index;">{{term}} <button style="background-color: red;"
+                    (click)="borrarTerminal(i)">borrar</button></li>
+        </ul>
+    </div>
+</div>
+<div>
+    <label>Agregar producción</label>
+    <input type="text" [(ngModel)]="ladoIzquierdo" placeholder="lado izq..">
+    <input type="text" [(ngModel)]="ladoDerecho" placeholder="lado der...">
+    <button (click)="agregarProduccion()">Agregar</button>
+</div>
+<div *ngFor="let produccion of producciones; let i = index;">
+    <app-produccion [produccion]="produccion"></app-produccion>
+    <button style="background-color: red;" (click)="borrarProduccion(i)">borrar</button>
+</div>
+<button (click)="agregarGramatica()">Agregar gramatica</button>
