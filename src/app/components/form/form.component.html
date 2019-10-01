@@ -2,7 +2,7 @@
 <button (click)="verGramaticas()">Ver gramaticas agregadas</button>
 <div class="N-T-container">
     <div class="noTerminales">
-        <label>Agregar no terminal</label>
+        <p>Agregar no terminal</p>
         <input type="text" [(ngModel)]="noTerminal">
         <button (click)="agregarNoTerminal()">Agregar</button>
         <ul>
@@ -12,7 +12,7 @@
         </ul>
     </div>
     <div class="terminales">
-        <label>Agregar terminal</label>
+        <p>Agregar terminal</p>
         <input type="text" [(ngModel)]="terminal">
         <button (click)="agregarTerminal()">Agregar</button>
         <ul>
@@ -22,7 +22,7 @@
     </div>
 </div>
 <div>
-    <label>Agregar producción</label>
+    <p>Agregar producción</p>
     <input type="text" [(ngModel)]="ladoIzquierdo" placeholder="lado izq..">
     <input type="text" [(ngModel)]="ladoDerecho" placeholder="lado der...">
     <button (click)="agregarProduccion()">Agregar</button>
